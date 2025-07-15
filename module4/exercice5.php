@@ -1,6 +1,6 @@
 <?php  
 
-$size = "M";
+$size = "XL";
 const TVA = 0.20;
 
 switch ($size) {
@@ -22,3 +22,4 @@ switch ($size) {
 }
     $prixTTC = $prixHT * (1 + TVA);
     echo "Le prix du t-shirt taille $size est de $prixTTC ";
+?>
