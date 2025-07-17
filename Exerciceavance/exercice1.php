@@ -73,7 +73,7 @@ function updateStats(&$teams,$team1,$team2,$score1,$score2){
     $teams[$team1]["goal_score"] += $score1;
     $teams[$team2]["goal_score"] += $score2;
 
-//EGALIT2
+
     if ($score1 === $score2 ){
         $teams[$team1]["draws"]++;
         $teams[$team2]["draws"]++;
