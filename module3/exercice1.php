@@ -1,6 +1,7 @@
 <?php
 $a = "5";
 $b = "10";
+
 $Somme = ($a + $b);
 
 echo "La somme est de a + b est de $Somme";
