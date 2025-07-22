@@ -1,0 +1,51 @@
+body{
+    background:linear-gradient(to right,#f6ff00,#ffa200);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+
+  .login-form, .dashboard, .error-page {
+    background-color: rgba(255, 255, 255, 0.345);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+
+
+h2{
+    margin-top: 0;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+input[type="text"],input[type="password"]{
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    box-sizing: border-box;
+}
+button, .button {
+    margin-top: 1.5rem;
+    padding: 0.7rem 1rem;
+    width: 100%;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
