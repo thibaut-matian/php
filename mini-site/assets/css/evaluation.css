@@ -1,0 +1,38 @@
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: rgb(0, 0, 0);
+}
+
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+th,
+td {
+    border: 1px solid #000000;
+    padding: 0.6em;
+    text-align: center;
+}
+
+th {
+    background-color: #ff0000;
+}
+
+tr:nth-child(even) {
+    background-color: #106ef2;
+}
+tr:nth-child(odd){
+    background-color: beige;
+    color: #000000;
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+    table {
+        width: 70%;
+    }
+}

@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Évaluation";
-$pageCss = "css/evaluation.css";
+$pageCss = "assets/css/evaluation.css";
 include "includes/header.php";
 
 $evaluations = [
@@ -8,15 +8,14 @@ $evaluations = [
     "Module 2" => 7,
     "Module 3" => 6,
     "Module 4" => 7,
-    "Module 5" => 8,
-    "Module 6" => 7,
-    "Module 7" => 6,
+    "Module 5" => 6,
+    "Module 6" => 8,
+    "Module 7" => 7,
     "Module 8" => 7,
-    "Module 9" => 8,
-    "Module 10" => 7,
-    "Module 11" => 6,
-    "Module 12" => 7
-    
+    "Module 9" => 6,
+    "Module 10" => 6,
+    "Module 11" => 5,
+    "Module 12" => 6
 ];
 ?>
 
@@ -30,10 +29,10 @@ $evaluations = [
     </thead>
     <tbody>
         <?php foreach ($evaluations as $module => $note): ?>
-        <tr>
-            <td><?= htmlspecialchars($module) ?></td>
-            <td><?= htmlspecialchars($note) ?></td>
-        </tr>
+            <tr>
+                <td><?= htmlspecialchars($module) ?></td>
+                <td><?= htmlspecialchars($note) ?></td>
+            </tr>
         <?php endforeach; ?>
     </tbody>
 </table>
