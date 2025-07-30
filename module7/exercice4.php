@@ -39,17 +39,20 @@ function Admis($moyenne){
     return $moyenne >= 10;
 }
 
-$eleveRecherche = "Lucie"; 
+$eleveRecherche = "YANN";
+
+$finalname = strtolower($eleveRecherche);
+$firstletter = ucfirst($finalname);
 
 
 foreach ($classe as $eleve) {
-  
-    if ($eleve["prenom"] === $eleveRecherche) {
+   
+    if ($eleve["prenom"] === $firstletter){
         $prenom = $eleve["prenom"];
         $moyenne = Moyenne($eleve);
         $admission = Admis($moyenne) ? "Admis" : "Non admis";
-    
+        
 
-    echo "$prenom : moyenne = " . round($moyenne, 2) . "/20 - $admission<br>";
+    echo $prenom . ": moyenne = " . round($moyenne, 2) . "/20 - $admission<br>";
 }
 }
